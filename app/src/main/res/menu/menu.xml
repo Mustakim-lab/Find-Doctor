@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/home_Id"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home"
+            >
+
+        </item>
+    </group>
+
+    <item android:title="Communication">
+        <menu>
+            <item
+                android:id="@+id/call_ID"
+                android:icon="@drawable/ic_baseline_call_24"
+                android:title="Call"
+                >
+            </item>
+            <item
+                android:id="@+id/contactMail_ID"
+                android:title="Contact Mail"
+                android:icon="@drawable/ic_baseline_contact_mail_24"
+                >
+            </item>
+        </menu>
+    </item>
+</menu>
