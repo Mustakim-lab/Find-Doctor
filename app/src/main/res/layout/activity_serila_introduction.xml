@@ -51,6 +51,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/localSerial_ID"
             android:layout_alignBottom="@+id/districtSerial_ID"
             android:layout_marginBottom="-60dp"
             android:hint="Local Address "
@@ -64,7 +65,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/illnessSerial_ID"
-        android:hint="Description of illness..."></EditText>
+        android:hint="Description of illness...">
+
+    </EditText>
 
     <EditText
         android:layout_width="match_parent"
@@ -74,6 +77,16 @@
         android:hint="Phone Number..">
 
     </EditText>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:layout_marginTop="20dp"
+        android:id="@+id/submitSerial_ID">
+
+    </Button>
 
 
 
