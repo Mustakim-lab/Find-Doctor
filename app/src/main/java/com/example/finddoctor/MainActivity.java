@@ -65,6 +65,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }else if (v.getId()==R.id.serialCard_ID){
             Intent intent=new Intent(MainActivity.this,serilaIntroduction.class);
             startActivity(intent);
+        }else if (v.getId()==R.id.prescriptionCard_ID){
+            Intent intent=new Intent(MainActivity.this,Prescription.class);
+            startActivity(intent);
         }
     }
 }

@@ -4,9 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:layout_weight="2"
     android:id="@+id/drawer_ID"
     android:background="@color/background_color"
     tools:openDrawer="start"
@@ -45,6 +42,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:id="@+id/doctorCard_ID"
+                android:layout_margin="10dp"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground">
 
@@ -53,6 +51,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
@@ -60,11 +59,12 @@
                         android:src="@drawable/doctor">
 
                     </ImageView>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/meterial_deep_purple"
-                        android:layout_margin="10dp">
+                        android:layout_margin="10dp"
+                        android:background="@color/meterial_deep_purple">
 
                     </View>
 
@@ -72,8 +72,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Doctor"
-                        android:textStyle="bold"
-                        android:textAppearance="?android:textAppearanceLarge">
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textStyle="bold">
 
                     </TextView>
 
@@ -84,6 +84,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_margin="10dp"
                 android:id="@+id/serialCard_ID"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground">
@@ -126,6 +127,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_margin="10dp"
                 android:id="@+id/prescriptionCard_ID"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground">
@@ -179,6 +181,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:id="@+id/medicineCard_ID"
+                android:layout_margin="10dp"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground">
 
@@ -220,6 +223,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_margin="10dp"
                 android:id="@+id/ambulanceCard_ID"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground">
@@ -261,6 +265,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_margin="10dp"
                 android:id="@+id/helthCard_ID"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground">

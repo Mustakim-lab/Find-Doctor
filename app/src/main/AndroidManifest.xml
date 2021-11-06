@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FindDoctor">
         <activity
+            android:name=".Prescription"
+            android:exported="false" />
+        <activity
             android:name=".serilaIntroduction"
             android:exported="false" />
         <activity
