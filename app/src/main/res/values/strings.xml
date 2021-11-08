@@ -2,4 +2,53 @@
     <string name="app_name">find doctor</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+
+    <string-array name="header_string">
+        <item>Flexi®</item>
+        <item>Tylace™</item>
+        <item>Virux®</item>
+        <item>Virux® HC</item>
+        <item>Benzapen ®</item>
+        <item>Flexilax®</item>
+        <item>Geston™</item>
+        <item>Ketoral®</item>
+        <item>Torax®</item>
+    </string-array>
+
+    <string-array name="child_string">
+        <item>Osteoarthritis, rheumatoid arthritis and ankylosing spondylitis</item>
+        <item>As an adjunctive treatment for patients with abnormal,
+        viscid or inspissated mucus secretion associated with conditions such as- Acute and chronic bronchopulmonary disorders
+            (Pneumonia, Bronchitis, Laryngitis, Sinusitis, Tracheitis, Influenza, Emphysema, Tracheobronchitis, Chronic asthmatic bronchitis, Tuberculosis etc.), Atelectasis , Pulmonary complication of cystic fibrosis, Pulmonary complication of thoracic and cardiovascular surgery.
+        </item>
+        <item>Systemic Antifungal, Antiviral and Antiprotozoal Agents</item>
+        <item>Skin Preparations</item>
+        <item>Benzapen® injection is indicated in adults, adolescents, children and neonates for the treatment and prophylaxis of the following infections: For the treatment of:
+- erysipelas
+- syphilis: early syphilis (primary and secondary)
+- latent syphilis (except for neurosyphilis and presence of pathological CSF findings)
+- yaws
+- pinta
+For the prophylaxis of:
+- rheumatic fever (chorea, rheumatic carditis)
+- poststreptococcal glomerulonephritis
+- erysipelas</item>
+
+        <item>Flexilax® is indicated for the treatment of muscle spasm, muscle contraction,
+            spasticity resulting from multiple sclerosis,
+            spinal cord injuries and other spinal cord diseases,
+            muscle spasm of cerebral origin especially infantile cerebral palsy,
+            cerebrovascular accidents or neoplastic or degenerative brain disease, tension-type headache.</item>
+
+        <item>Threatened Abortion, Habitual Abortion, Intrauterine Growth Retardation, Threatened premature delivery</item>
+
+        <item>Treatment of superficial and deep mycoses : Infections of the skin, hair and nails by dermatophytes and/or yeasts (dermatomycosis, onychomycosis, perionyxis, pityriasisversicolor, chronic mucocutaneous candidiasis etc.) especially when topical treatment is difficult or not very effective,
+            owing to involvement of large skin surfaces or to lesions affecting deeper dermal layers,
+            nails and hairs ; Yeast infection of the mouth (oral thrush, perleche) and the gastrointestinal tract ; Vaginal candidiasis, especially chronic recurrent cases or cases responding poorly to topcial treatment ; Systemic mycotic infections such as systemic candidiasis, paracoccidioidomycosis,
+            histoplasmosis, coccidioidomycosis etc.</item>
+
+        <item>Short-term management of moderate to severe acute post-operative pain and acute pain of other origins.</item>
+
+
+    </string-array>
 </resources>

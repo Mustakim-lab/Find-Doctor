@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ActionBarDrawerToggle toggle;
     NavigationView navigationView;
 
-    private CardView doctorCard,serialCard;
+    private CardView doctorCard,serialCard,prescriptionCard,medicineCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         doctorCard.setOnClickListener(this);
         serialCard=findViewById(R.id.serialCard_ID);
         serialCard.setOnClickListener(this);
+        prescriptionCard=findViewById(R.id.prescriptionCard_ID);
+        prescriptionCard.setOnClickListener(this);
+        medicineCard=findViewById(R.id.medicineCard_ID);
+        medicineCard.setOnClickListener(this);
+
 
         drawerLayout=findViewById(R.id.drawer_ID);
         navigationView=findViewById(R.id.navigation_ID);
@@ -68,6 +73,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }else if (v.getId()==R.id.prescriptionCard_ID){
             Intent intent=new Intent(MainActivity.this,Prescription.class);
             startActivity(intent);
+        }else if (v.getId()==R.id.medicineCard_ID){
+            Intent intent=new Intent(MainActivity.this,Medichine.class);
+            startActivity(intent);
         }
+
     }
 }
