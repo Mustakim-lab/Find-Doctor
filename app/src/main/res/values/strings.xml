@@ -51,4 +51,12 @@ For the prophylaxis of:
 
 
     </string-array>
+
+    <string-array name="khabarer_name">
+        <item>প্রোটিন </item>
+    </string-array>
+
+    <string-array name="biboron">
+        <item></item>
+    </string-array>
 </resources>

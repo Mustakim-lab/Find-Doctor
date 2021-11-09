@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FindDoctor">
         <activity
+            android:name=".HelthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AmbulanceActvity"
+            android:exported="false" />
+        <activity
             android:name=".Medichine"
             android:exported="false" />
         <activity

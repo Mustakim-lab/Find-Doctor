@@ -1,9 +1,15 @@
 package com.example.finddoctor;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.ExpandableListView;
+import android.widget.SearchView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -37,6 +43,7 @@ public class Medichine extends AppCompatActivity {
             }
         });
     }
+
 
     private void prepareListData() {
         String[] headerString=getResources().getStringArray(R.array.header_string);
