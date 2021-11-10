@@ -80,4 +80,18 @@ For the prophylaxis of:
         </item>
     </string-array>
 
+    <string-array name="coruna_doctor">
+        <item>
+            <br><b>Dr. Shamim Boksha\n</b></br>MBBS, FCPS (Medicine), MD (Gastroenterology)\n
+Gastroenterology, Medicine and Liver Diseases Specialist \n
+National Hospital, Chittagong
+        </item>
+
+        <item><br><b>Prof. Dr. M.N. Huda \n</b></br>MBBS, FCPS (Medicine), FRCP, MD (Rheumatology)\n
+        Rheumatology and Medicine Specialist \n
+        Bangabandhu Sheikh Mujib Medical University Hospital
+
+        </item>
+    </string-array>
+
 </resources>

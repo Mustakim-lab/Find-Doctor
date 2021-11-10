@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FindDoctor">
         <activity
+            android:name=".CorunaDoctor"
+            android:exported="false" />
+        <activity
             android:name=".HelthActivity"
             android:exported="false" />
         <activity
