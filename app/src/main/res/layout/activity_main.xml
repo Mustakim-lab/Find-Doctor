@@ -71,7 +71,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Doctor"
+                        android:text="ডাক্তার"
                         android:textAppearance="?android:textAppearanceLarge"
                         android:textStyle="bold">
 
@@ -114,7 +114,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Serial"
+                        android:text="সিরিয়াল"
                         android:textAppearance="?android:textAppearanceLarge"
                         android:textStyle="bold">
 
@@ -155,8 +155,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Prescription"
+                        android:text="প্রেসক্রিপশন"
                         android:textStyle="bold"
+                        android:textSize="20sp"
                         android:textAppearance="?android:textAppearanceLarge">
 
                     </TextView>
@@ -210,7 +211,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Medicine"
+                        android:text="মেডিসিন"
                         android:textStyle="bold"
                         android:textAppearance="?android:textAppearanceLarge">
 
@@ -253,7 +254,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ambulance"
+                        android:text="অ্যাামবুলেন্স"
+                        android:textSize="20sp"
                         android:textAppearance="?android:textAppearanceLarge"
                         android:textStyle="bold">
 
@@ -293,7 +295,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Helth"
+                        android:text="হেলথ"
                         android:textStyle="bold"
                         android:textAppearance="?android:textAppearanceLarge">
 
