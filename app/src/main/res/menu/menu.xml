@@ -20,6 +20,13 @@
                 >
             </item>
             <item
+                android:title="Chat with doctor"
+                android:id="@+id/chat_ID"
+                android:icon="@drawable/ic_baseline_message_24"
+                >
+
+            </item>
+            <item
                 android:id="@+id/contactMail_ID"
                 android:title="Contact Mail"
                 android:icon="@drawable/ic_baseline_contact_mail_24"

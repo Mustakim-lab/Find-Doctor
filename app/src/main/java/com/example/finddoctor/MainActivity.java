@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
-    NavigationView navigationView;
 
     private CardView doctorCard,serialCard,prescriptionCard,medicineCard,ambulance,health;
 
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         drawerLayout=findViewById(R.id.drawer_ID);
-        navigationView=findViewById(R.id.navigation_ID);
+        NavigationView navigationView=findViewById(R.id.navigation_ID);
         toggle=new ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
@@ -52,6 +51,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                if (item.getItemId()==R.id.chat_ID){
+                    Intent intent=new Intent(MainActivity.this,HelthActivity.class);
+                    startActivity(intent);
+                }
                 return false;
             }
         });
@@ -72,10 +75,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent=new Intent(MainActivity.this,doctorList.class);
             startActivity(intent);
         }else if (v.getId()==R.id.serialCard_ID){
-            Intent intent=new Intent(MainActivity.this,serilaIntroduction.class);
+            Intent intent=new Intent(MainActivity.this,StartActivity.class);
             startActivity(intent);
         }else if (v.getId()==R.id.prescriptionCard_ID){
-            Intent intent=new Intent(MainActivity.this,Prescription.class);
+            Intent intent=new Intent(MainActivity.this,StartActivity.class);
             startActivity(intent);
         }else if (v.getId()==R.id.medicineCard_ID){
             Intent intent=new Intent(MainActivity.this,Medichine.class);
