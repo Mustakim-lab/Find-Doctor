@@ -96,7 +96,6 @@ public class RegistrationActivity extends AppCompatActivity {
                             Intent intent=new Intent(RegistrationActivity.this,serilaIntroduction.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);
-                            finish();
                             Toast.makeText(RegistrationActivity.this, "LogIn Successfully", Toast.LENGTH_SHORT).show();
                         }
                     });

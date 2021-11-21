@@ -9,17 +9,6 @@
     tools:openDrawer="start"
     tools:context=".MainActivity">
 
-
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/navigation_ID"
-        app:menu="@menu/menu"
-        app:headerLayout="@layout/navprofile"
-        android:layout_gravity="start">
-
-    </com.google.android.material.navigation.NavigationView>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -309,6 +298,19 @@
     </LinearLayout>
 
 
+
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_ID"
+        app:menu="@menu/menu"
+        app:headerLayout="@layout/navprofile"
+        android:layout_gravity="start">
+
+    </com.google.android.material.navigation.NavigationView>
 
 
 
