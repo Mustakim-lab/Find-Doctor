@@ -18,7 +18,6 @@
             android:background="@color/purple_200">
 
             <TextView
-                android:id="@+id/user_name_chat_ID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
