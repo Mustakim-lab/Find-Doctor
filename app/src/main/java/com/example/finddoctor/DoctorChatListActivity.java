@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.example.finddoctor.Fragment.ChatFragment;
 import com.example.finddoctor.Fragment.DListFragment;
+import com.example.finddoctor.Model.Users;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -26,7 +27,7 @@ import java.util.ArrayList;
 
 public class DoctorChatListActivity extends AppCompatActivity {
 
-    TextView userNameText;
+    TextView userNameText,patentName;
     FirebaseUser firebaseUser;
     DatabaseReference reference;
     FirebaseAuth mAuth;
@@ -37,6 +38,23 @@ public class DoctorChatListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_chat_list);
+
+        patentName=findViewById(R.id.patientName_ID);
+        mAuth=FirebaseAuth.getInstance();
+        firebaseUser=FirebaseAuth.getInstance().getCurrentUser();
+        reference=FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.getUid());
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Users users=snapshot.getValue(Users.class);
+                patentName.setText(users.getUsername());
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 
         tabLayout=findViewById(R.id.tabLayout_ID);
         viewPager=findViewById(R.id.viewPager_ID);

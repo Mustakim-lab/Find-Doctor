@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FindDoctor">
         <activity
+            android:name=".NewSignActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Start1Activity"
+            android:exported="false" />
+        <activity
             android:name=".MessageWithDActivity"
             android:exported="false" />
         <activity

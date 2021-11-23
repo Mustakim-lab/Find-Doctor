@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         if (item.getItemId()==R.id.chat_ID){
-            Intent intent=new Intent(MainActivity.this,DoctorChatListActivity.class);
+            Intent intent=new Intent(MainActivity.this,Start1Activity.class);
             startActivity(intent);
         }
         return false;
