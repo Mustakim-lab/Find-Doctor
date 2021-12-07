@@ -23,6 +23,8 @@ public class SignInActivity extends AppCompatActivity {
     private EditText gmailEditText,passwordEditText;
     private Button button;
     private ProgressBar progressBar;
+    Intent intent;
+    int value;
 
     FirebaseAuth firebaseAuth;
     DatabaseReference reference;
@@ -35,6 +37,9 @@ public class SignInActivity extends AppCompatActivity {
         passwordEditText=findViewById(R.id.user_sign_password_ID);
         button=findViewById(R.id.signSubBtn_ID);
         progressBar=findViewById(R.id.sign_progressBar_ID);
+
+        intent=getIntent();
+        value=intent.getIntExtra(StartActivity.serial,0);
 
         firebaseAuth=FirebaseAuth.getInstance();
 
@@ -71,10 +76,18 @@ public class SignInActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 progressBar.setVisibility(View.GONE);
                 if (task.isSuccessful()){
-                    Intent intent=new Intent(SignInActivity.this,Prescription.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                    startActivity(intent);
-                    Toast.makeText(SignInActivity.this, "LogIn Successfully", Toast.LENGTH_SHORT).show();
+                    if (value==1){
+                        Intent intent=new Intent(SignInActivity.this,SerilaIntroductionActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+                        Toast.makeText(SignInActivity.this, "LogIn Successfully", Toast.LENGTH_SHORT).show();
+                    }else {
+                        Intent intent=new Intent(SignInActivity.this,Prescription.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+                        Toast.makeText(SignInActivity.this, "LogIn Successfully", Toast.LENGTH_SHORT).show();
+                    }
+
                 }
             }
         });

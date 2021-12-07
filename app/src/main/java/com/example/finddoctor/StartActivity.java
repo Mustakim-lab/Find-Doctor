@@ -14,10 +14,15 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
 
 
     Button button1,button2;
+    Intent intent;
+    int value;
+    final static String serial="serial";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
+        intent=getIntent();
+        value=intent.getIntExtra(MainActivity.serial,0);
 
         button1=findViewById(R.id.signIn_ID);
         button1.setOnClickListener(this);
@@ -30,6 +35,7 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         if (v.getId()==R.id.signIn_ID){
             Intent intent=new Intent(StartActivity.this,SignInActivity.class);
+            intent.putExtra(serial,value);
             startActivity(intent);
         }else if (v.getId()==R.id.signUpIn_ID){
             Intent intent=new Intent(StartActivity.this,RegistrationActivity.class);

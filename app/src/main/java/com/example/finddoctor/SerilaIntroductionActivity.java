@@ -12,7 +12,7 @@ import com.example.finddoctor.Model.SerialInfo;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class serilaIntroduction extends AppCompatActivity {
+public class SerilaIntroductionActivity extends AppCompatActivity {
 
     private EditText nameEdit,districtEdit,subdistrictEdit,localAddressEdit,illnessEdit,phoneEdit;
     private Button button;

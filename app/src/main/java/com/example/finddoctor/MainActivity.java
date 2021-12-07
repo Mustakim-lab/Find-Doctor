@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private CardView doctorCard,serialCard,prescriptionCard,medicineCard,ambulance,health;
 
+    final static String serial="serial";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,StartActivity.class);
+                intent.putExtra(serial,1);
                 startActivity(intent);
 
             }

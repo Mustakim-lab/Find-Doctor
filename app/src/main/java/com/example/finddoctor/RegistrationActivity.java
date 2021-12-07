@@ -93,7 +93,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
-                            Intent intent=new Intent(RegistrationActivity.this,serilaIntroduction.class);
+                            Intent intent=new Intent(RegistrationActivity.this, SerilaIntroductionActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);
                             Toast.makeText(RegistrationActivity.this, "LogIn Successfully", Toast.LENGTH_SHORT).show();

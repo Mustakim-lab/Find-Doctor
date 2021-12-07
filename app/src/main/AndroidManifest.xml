@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FindDoctor">
         <activity
+            android:name=".HeartDoctorActivity"
+            android:exported="false" />
+        <activity
             android:name=".NewSignActivity"
             android:exported="false" />
         <activity
@@ -46,7 +49,7 @@
             android:name=".Prescription"
             android:exported="false" />
         <activity
-            android:name=".serilaIntroduction"
+            android:name=".SerilaIntroductionActivity"
             android:exported="false" />
         <activity
             android:name=".doctorList"

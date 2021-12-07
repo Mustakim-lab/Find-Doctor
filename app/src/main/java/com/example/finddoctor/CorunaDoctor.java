@@ -27,7 +27,7 @@ public class CorunaDoctor extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent=new Intent(CorunaDoctor.this,serilaIntroduction.class);
+                Intent intent=new Intent(CorunaDoctor.this, SerilaIntroductionActivity.class);
                 startActivity(intent);
             }
         });

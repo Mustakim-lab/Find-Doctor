@@ -126,4 +126,5 @@ public class MessageWithDActivity extends AppCompatActivity {
 
         reference.child("Chats").push().setValue(hashMap);
     }
+
 }
